@@ -3,6 +3,7 @@ public interface Empilhavel {
 	void empilhar(Object dado);
 	Object desempilhar();
 	Object espiar();
+	void atualizar(Object dado);
 	//métodos auxiliares
 	boolean estaCheia();
 	boolean estaVazia();

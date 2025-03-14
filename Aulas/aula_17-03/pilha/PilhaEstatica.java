@@ -13,6 +13,7 @@ public class PilhaEstatica implements Empilhavel {
 		// Chama o contrutor que recebe um elemento
 	}
 	
+	// C - Create
 	@Override
 	public void empilhar(Object dado) {
 		if(!estaCheia()) {
@@ -22,28 +23,40 @@ public class PilhaEstatica implements Empilhavel {
 			System.err.println("Pilha Cheia!");
 		}
 	}
+
+	// R - Buscar
+	@Override	
+	public Object espiar() {
+		Object aux = null;
+		if(!estaVazia()) {
+			aux = dados[ponteiroTopo]; 
+		} else {
+			System.err.println("Pilha vazia");
+		}
+		return aux;	
+	}
+
+	// U - Update
+	@Override
+	public void atualizar(Object dado) {
+		if(!estaVazia()) {
+			dados[ponteiroTopo] = dado;
+		} else {
+			System.err.println("Pilha vazia!");
+		}
+	}
 	
+	// D - Remover
 	@Override	
 	public Object desempilhar() {
-		Object dadoTopo = null;
+		Object aux = null;
 		if(!estaVazia()) {
-			dadoTopo = dados[ponteiroTopo]; 
+			aux = dados[ponteiroTopo]; 
 			ponteiroTopo--;
 		} else {
 			System.err.println("Pilha Vazia!");
 		}
-		return dadoTopo;
-	}
-	
-	@Override	
-	public Object espiar() {
-		Object dadoTopo = null;
-		if(!estaVazia()) {
-			dadoTopo = dados[ponteiroTopo]; 
-		} else {
-			throw new Error("Pilha vazia");
-		}
-		return dadoTopo;	
+		return aux;
 	}
 		
 	@Override
