@@ -74,8 +74,8 @@ public class PilhaEstaticaInvertida implements Empilhavel {
 	@Override
 	public String imprimir() {
 		String resultado = "[";
-		for(int i = 0; i >= dados.length; i++) {
-			if (i == dados.length) {
+		for(int i = ponteiroTopo; i < dados.length; i++) {
+			if (i == dados.length - 1) {
 				resultado += dados[i];
 			}
 			else {
