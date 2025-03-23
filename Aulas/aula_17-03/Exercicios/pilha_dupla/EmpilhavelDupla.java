@@ -1,4 +1,4 @@
-public interface Cabo {
+public interface EmpilhavelDupla {
 	//métodos da Pilha1
 	void empilhar1(Object dado);
 	Object desempilhar1();

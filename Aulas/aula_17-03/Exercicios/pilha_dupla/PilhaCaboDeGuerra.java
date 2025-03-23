@@ -1,4 +1,4 @@
-public class PilhaCaboDeGuerra implements Cabo {
+public class PilhaCaboDeGuerra implements EmpilhavelDupla {
 	//variáveis de instância
 	private int ponteiroTopo1;
 	private int ponteiroTopo2;
