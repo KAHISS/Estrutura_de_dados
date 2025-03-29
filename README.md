@@ -2,3 +2,4 @@
 
 ## Aulas ##
 ### - 17/03/2025 - Pilhas estáticas ###
+### - 24/03/2025 - Filas estáticas ###
