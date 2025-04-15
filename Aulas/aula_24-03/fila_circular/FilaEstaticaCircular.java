@@ -12,8 +12,8 @@ public class FilaEstaticaCircular implements Enfileiravel {
 
     public FilaEstaticaCircular(int tamanho) {
         dados = new Object[tamanho];
-        ponteiroFim = 0;
-        ponteiroInicio = -1;
+        ponteiroFim = -1;
+        ponteiroInicio = 0;
         quantidade = 0;
     }
 
@@ -40,13 +40,13 @@ public class FilaEstaticaCircular implements Enfileiravel {
                 retorno += dados[i] + ", ";
             }
         }
-        return retorno;
+        return retorno + "]";
     }
 
     @Override
     public void enfileirar(Object dado) {
         if (!estaCheia()) {
-            ponteiroFim = (ponteiroFim + 1) % 8;
+            ponteiroFim = (ponteiroFim + 1) % dados.length;
             dados[ponteiroFim] = dado;
             quantidade ++;
         } else {
@@ -61,7 +61,7 @@ public class FilaEstaticaCircular implements Enfileiravel {
 
         if (!estaVazia()) {
             aux = dados[ponteiroInicio];
-            ponteiroInicio = (ponteiroInicio + 1) % 8;
+            ponteiroInicio = (ponteiroInicio + 1) % dados.length;
             quantidade --;
         } else {
             System.err.println("A fila está vazia");

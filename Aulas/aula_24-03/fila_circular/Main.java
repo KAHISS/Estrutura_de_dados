@@ -3,6 +3,5 @@ public class Main {
         Enfileiravel fila = new FilaEstaticaCircular();
 
         fila.enfileirar("a");
-        fila.desenfileirar();
     }
 }

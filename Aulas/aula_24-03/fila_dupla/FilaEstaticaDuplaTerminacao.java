@@ -86,7 +86,7 @@ public class FilaEstaticaDuplaTerminacao implements DuplamenteEnfileravel{
         return aux;
     }
 
-     @Override
+    @Override
     public void atualizarInicio(Object dado) {
         if(!estaVazia()){
             dados[ponteiroInicio] = dado;
