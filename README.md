@@ -7,3 +7,4 @@
 ### - 07/04/2025 - Listas estáticas ###
 ### - 14/04/2025 - algoritmos de ordenação ###
 ### - 05/05/2025 - pilhas dinâmicas genericas ###
+### - 12/05/2025 - filas dinâmicas genericas ###
