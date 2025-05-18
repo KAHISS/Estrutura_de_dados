@@ -3,8 +3,8 @@ import java.util.NoSuchElementException;
 import javax.lang.model.util.ElementScanner14;
 
 public class FilaDinamicaDuplaTerminacao <T> implements DuplamenteEnfileravel <T>{  
-    private NodoDuplo ponteiroInicio; 
-    private NodoDuplo ponteiroFim;  
+    private NodoDuplo<T> ponteiroInicio; 
+    private NodoDuplo<T> ponteiroFim;  
     private int quantidade;
     private int tamanho;  
 
@@ -53,12 +53,12 @@ public class FilaDinamicaDuplaTerminacao <T> implements DuplamenteEnfileravel <T
     }
 
     @Override
-    public Object desenfileirarFim() {
+    public T desenfileirarFim() {
         throw new UnsupportedOperationException("Operação não suportada");
     }
 
     @Override
-    public Object frente() {
+    public T frente() {
         if(estaVazia()){
             throw new NoSuchElementException("Fila vazia");
         }
@@ -67,7 +67,7 @@ public class FilaDinamicaDuplaTerminacao <T> implements DuplamenteEnfileravel <T
 
     
     @Override
-    public Object tras() {
+    public T tras() {
         throw new UnsupportedOperationException("Operação não suportada");
     }
 
