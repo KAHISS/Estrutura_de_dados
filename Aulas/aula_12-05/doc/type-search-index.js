@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Empilhavel"},{"p":"<Unnamed>","l":"NodoDuplo"},{"p":"<Unnamed>","l":"PilhaDinamicaGenerica"}];updateSearchResults();
