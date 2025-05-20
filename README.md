@@ -8,3 +8,4 @@
 ### - 14/04/2025 - algoritmos de ordenação ###
 ### - 05/05/2025 - pilhas dinâmicas genericas ###
 ### - 12/05/2025 - filas dinâmicas genericas ###
+### - 19/05/2025 - listas dinâmicas genericas ###
