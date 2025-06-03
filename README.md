@@ -9,3 +9,4 @@
 ### - 05/05/2025 - pilhas dinâmicas genericas ###
 ### - 12/05/2025 - filas dinâmicas genericas ###
 ### - 19/05/2025 - listas dinâmicas genericas ###
+### - 02/06/2025 - árvores binárias ###
