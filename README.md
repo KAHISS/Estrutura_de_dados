@@ -10,3 +10,4 @@
 ### - 12/05/2025 - filas dinâmicas genericas ###
 ### - 19/05/2025 - listas dinâmicas genericas ###
 ### - 02/06/2025 - árvores binárias ###
+### - 09/06/2025 - árvores binárias heap prioridade e algoritmos de ordenação por divisão e conquista ###
