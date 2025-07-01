@@ -19,7 +19,7 @@ public interface Amontoavel<T> {
 	 * 
 	 * @return o elemento raiz removido
 	 */
-	T extrair();				// D
+	T extrair() throws UnderflowException;				// D
 
 	/**
 	 * Obtém o elemento raiz do heap sem removê-lo.

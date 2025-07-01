@@ -9,10 +9,8 @@ public class Paciente implements Priorizavel {
         this.nome = nome;
         this.idade = idade;
         this.prioridade = prioridade;
-        long inversoTimestamp = 1_000_000_000_000L - contador;
+        long inversoTimestamp = 1_000_000_000_000L - System.nanoTime();
         this.prioridadeInterna = prioridade * 1_000_000_000_000L + inversoTimestamp;
-
-        contador++;
     }
 
     public String getNome() {

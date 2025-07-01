@@ -91,7 +91,7 @@ public class ArvoreBinariaHeapMaximo<T> implements Amontoavel<T> {
     }
 
     @Override
-    public T extrair() {
+    public T extrair() throws UnderflowException {
         if (estaVazia()) {
             throw new UnderflowException("Heap Vazia!");
         }
